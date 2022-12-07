@@ -6,4 +6,8 @@
 
 \components\QC8150\Graphics\GRAPHICS.SOC_QC8150.MH2LM_DESKTOP
 
-\components\QC8150\Test
+\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE
+
+\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.SURFACE_EXTRAS
+
+\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS
