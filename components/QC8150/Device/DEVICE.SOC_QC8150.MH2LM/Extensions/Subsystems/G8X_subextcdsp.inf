@@ -1,0 +1,305 @@
+;/*++
+;
+;Copyright (c) 2019-2020 by Qualcomm Technologies, Incorporated.  All Rights Reserved.
+;
+;Module Name:
+;    qcsubsys_ext_cdsp.inx
+;
+;Abstract:
+;    INF file for installing CDSP
+;
+;--*/
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Extension
+ClassGuid={e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+ExtensionId={350be374-3c26-444e-9ff0-03471961ac87}
+Provider=%SURFACE%
+DriverVer = 02/06/2023,1.0.1780.0001
+CatalogFile=G8X_subextcdsp.cat
+PnpLockDown=1
+
+[DestinationDirs]
+ubwcdma_dynlib.so.21 = 13,\CDSP
+map_SHARED_LIBS_855.cdsp.prodQ.txt.20 = 13,\CDSP
+libvpp_svc_skel.so.19 = 13,\CDSP
+libvpp_qbr.so.18 = 13,\CDSP
+libvpp_nr.so.17 = 13,\CDSP
+libvpp_mvp.so.16 = 13,\CDSP
+libvpp_frc.so.15 = 13,\CDSP
+libvpp_aie.so.14 = 13,\CDSP
+libsysmon_skel.so.13 = 13,\CDSP
+libsysmonquery_skel.so.12 = 13,\CDSP
+libsysmonhvxthrottle_skel.so.11 = 13,\CDSP
+libsysmondomain_skel.so.10 = 13,\CDSP
+libstabilitydomain_skel.so.9 = 13,\CDSP
+libimmotion_skel.so.8 = 13,\CDSP
+libhta_dsp_skel.so.7 = 13,\CDSP
+libhcp_rpc_skel.so.6 = 13,\CDSP
+libc++abi.so.1.5 = 13,\CDSP
+libc++.so.1.4 = 13,\CDSP
+libbenchmark_skel.so.3 = 13,\CDSP
+fastrpc_shell_unsigned_3.2 = 13,\CDSP
+fastrpc_shell_3.1 = 13,\CDSP
+SOFiles_CDSP = 13
+Files_CDSP = 13
+
+[SourceDisksNames]
+1 = %DiskId1%
+
+[SourceDisksFiles]
+ubwcdma_dynlib.so.21 = 1,\CDSP
+map_SHARED_LIBS_855.cdsp.prodQ.txt.20 = 1,\CDSP
+libvpp_svc_skel.so.19 = 1,\CDSP
+libvpp_qbr.so.18 = 1,\CDSP
+libvpp_nr.so.17 = 1,\CDSP
+libvpp_mvp.so.16 = 1,\CDSP
+libvpp_frc.so.15 = 1,\CDSP
+libvpp_aie.so.14 = 1,\CDSP
+libsysmon_skel.so.13 = 1,\CDSP
+libsysmonquery_skel.so.12 = 1,\CDSP
+libsysmonhvxthrottle_skel.so.11 = 1,\CDSP
+libsysmondomain_skel.so.10 = 1,\CDSP
+libstabilitydomain_skel.so.9 = 1,\CDSP
+libimmotion_skel.so.8 = 1,\CDSP
+libhta_dsp_skel.so.7 = 1,\CDSP
+libhcp_rpc_skel.so.6 = 1,\CDSP
+libc++abi.so.1.5 = 1,\CDSP
+libc++.so.1.4 = 1,\CDSP
+libbenchmark_skel.so.3 = 1,\CDSP
+fastrpc_shell_unsigned_3.2 = 1,\CDSP
+fastrpc_shell_3.1 = 1,\CDSP
+qccdsp8150.mbn = 1
+RCDS.bin=1
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+;*****************************************
+; Subsystem Driver Install Section
+;*****************************************
+
+[Manufacturer]
+%SURFACE%=Extension,NTARM64
+
+[Extension.NTARM64]
+%CDSP.DeviceDesc%=SUBSYS_Device_CDSP_ext, ACPI\VEN_QCOM&DEV_0523&SUBSYS_CLS08150
+%CDSP.DeviceDesc%=SUBSYS_Device_CDSP_ext, ACPI\VEN_QCOM&DEV_0523&SUBSYS_CDP08150
+%CDSP.DeviceDesc%=SUBSYS_Device_CDSP_ext, ACPI\VEN_QCOM&DEV_0523&SUBSYS_MTP08150
+%CDSP.DeviceDesc%=SUBSYS_Device_CDSP_ext, ACPI\VEN_QCOM&DEV_0523&SUBSYS_MTP08150
+%PIL.DeviceDesc%=PIL_Device_Ext, ACPI\VEN_QCOM&DEV_051B&SUBSYS_MTP08150
+%PIL.DeviceDesc%=PIL_Device_Ext, ACPI\VEN_QCOM&DEV_051B&SUBSYS_MTP08150
+%PIL.DeviceDesc%=PIL_Device_Ext, ACPI\VEN_QCOM&DEV_051B&SUBSYS_MTPB8150
+%PIL.DeviceDesc%=PIL_Device_Ext, ACPI\VEN_QCOM&DEV_051B&SUBSYS_MTPC8150
+%PIL.DeviceDesc%=PIL_Device_Ext, ACPI\VEN_QCOM&DEV_051B&SUBSYS_MTPD8150
+%PIL.DeviceDesc%=PIL_Device_Ext, ACPI\VEN_QCOM&DEV_051B&SUBSYS_CLS08150
+%PIL.DeviceDesc%=PIL_Device_Ext, ACPI\VEN_QCOM&DEV_051B&SUBSYS_CLSB8150
+%PIL.DeviceDesc%=PIL_Device_Ext, ACPI\VEN_QCOM&DEV_051B&SUBSYS_CLSC8150
+%PIL.DeviceDesc%=PIL_Device_Ext, ACPI\VEN_QCOM&DEV_051B&SUBSYS_CDP08150
+%PIL.DeviceDesc%=PIL_Device_Ext_APQ, ACPI\VEN_QCOM&DEV_051B&SUBSYS_SCNM8150
+
+[SUBSYS_Device_CDSP_ext.NT]
+CopyFiles=ubwcdma_dynlib.so.21,map_SHARED_LIBS_855.cdsp.prodQ.txt.20,libvpp_svc_skel.so.19,libvpp_qbr.so.18,libvpp_nr.so.17,libvpp_mvp.so.16,libvpp_frc.so.15,libvpp_aie.so.14,libsysmon_skel.so.13,libsysmonquery_skel.so.12,libsysmonhvxthrottle_skel.so.11,libsysmondomain_skel.so.10,libstabilitydomain_skel.so.9,libimmotion_skel.so.8,libhta_dsp_skel.so.7,libhcp_rpc_skel.so.6,libc++abi.so.1.5,libc++.so.1.4,libbenchmark_skel.so.3,fastrpc_shell_unsigned_3.2,fastrpc_shell_3.1,SOFiles_CDSP,Files_CDSP
+AddReg=SUBSYSReg_CDSP
+
+[SUBSYS_Device_CDSP_ext.NT.HW]
+AddReg=SUBSYSReg_common,HashMapping_CDSP,SUBSYSReg_CDSP_HW
+
+[Files_CDSP]
+qccdsp8150.mbn 
+RCDS.bin
+
+[SUBSYSReg_CDSP]
+;Image path for CDSP image
+HKR,,"CdspImagePath",%REG_SZ%,"%13%\qccdsp8150.mbn"
+
+[SUBSYSReg_common]
+HKR,,"WaitForVolStartupAppComplete",%REG_DWORD%,1
+;PathMappingKeyName defines the subkey name under protocol key,
+;where subsys will look for local-remote path mappings. The default value is "Default".
+;If overwritten by OEMs, they must ensure to generate path mappings under this subkey.
+;If defined, subsys looks under HKR,Mappings\<Protocol>\<PathMappingKeyName> instead of HKR,Mappings\<Protocol>
+;This value can have maximum length of 128 excluding NULL character.
+HKR,Mappings,"PathMappingKeyName",%REG_SZ%,"Default"
+
+[SUBSYSReg_CDSP_HW]
+;Image path for resource bin
+HKR,Resources,"BinaryPath",%REG_SZ%, %13%\RCDS.bin 
+
+[PIL_Device_Ext.NT]
+
+[PIL_Device_Ext.NT.HW]
+Addreg=PIL_Reg_common,PIL_Reg_MSM
+
+
+[PIL_Device_Ext_APQ.NT]
+
+[PIL_Device_Ext_APQ.NT.HW]
+Addreg=PIL_Reg_common,PIL_Reg_APQ
+
+
+[PIL_Reg_common]
+HKR ,SubsystemLoad\CDSP,MemoryAlignment,%REG_DWORD%,0x00100000
+
+[PIL_Reg_MSM]
+; CDSP registry values
+HKR ,SubsystemLoad\CDSP,MemoryReservation,%REG_DWORD%,0x01400000
+
+[PIL_Reg_APQ]
+; CDSP registry values
+HKR ,SubsystemLoad\CDSP,MemoryReservation,%REG_DWORD%,0x01400000
+
+
+;**********************************************************************************************
+;    DONOT DELETE THE EMPTY PLACEHOLDERS BELOW. THEY WILL BE AUTOPOPULATED DURING BUILD TIME
+;**********************************************************************************************
+
+[SOFiles_CDSP]
+[ubwcdma_dynlib.so.21]
+ubwcdma_dynlib.so.21
+[map_SHARED_LIBS_855.cdsp.prodQ.txt.20]
+map_SHARED_LIBS_855.cdsp.prodQ.txt.20
+[libvpp_svc_skel.so.19]
+libvpp_svc_skel.so.19
+[libvpp_qbr.so.18]
+libvpp_qbr.so.18
+[libvpp_nr.so.17]
+libvpp_nr.so.17
+[libvpp_mvp.so.16]
+libvpp_mvp.so.16
+[libvpp_frc.so.15]
+libvpp_frc.so.15
+[libvpp_aie.so.14]
+libvpp_aie.so.14
+[libsysmon_skel.so.13]
+libsysmon_skel.so.13
+[libsysmonquery_skel.so.12]
+libsysmonquery_skel.so.12
+[libsysmonhvxthrottle_skel.so.11]
+libsysmonhvxthrottle_skel.so.11
+[libsysmondomain_skel.so.10]
+libsysmondomain_skel.so.10
+[libstabilitydomain_skel.so.9]
+libstabilitydomain_skel.so.9
+[libimmotion_skel.so.8]
+libimmotion_skel.so.8
+[libhta_dsp_skel.so.7]
+libhta_dsp_skel.so.7
+[libhcp_rpc_skel.so.6]
+libhcp_rpc_skel.so.6
+[libc++abi.so.1.5]
+libc++abi.so.1.5
+[libc++.so.1.4]
+libc++.so.1.4
+[libbenchmark_skel.so.3]
+libbenchmark_skel.so.3
+[fastrpc_shell_unsigned_3.2]
+fastrpc_shell_unsigned_3.2
+[fastrpc_shell_3.1]
+fastrpc_shell_3.1
+
+;To configure refer PathMappingKeyName registry
+[HashMapping_CDSP]
+
+; Updating registry of fastrpc_shell_3.1 to remote path \cdsp\fastrpc_shell_3
+HKR,Mappings\FASTRPC\Default\97e955961e757cc681afede1a991022bbfded8902ebf857692f0d19745b5a109,"Local",%REG_SZ%, %13%\CDSP\fastrpc_shell_3.1
+hkr,mappings\fastrpc\default\97e955961e757cc681afede1a991022bbfded8902ebf857692f0d19745b5a109,"remote",%reg_sz%, \cdsp\fastrpc_shell_3
+
+; Updating registry of fastrpc_shell_unsigned_3.2 to remote path \cdsp\fastrpc_shell_unsigned_3
+HKR,Mappings\FASTRPC\Default\a0024fa5415302fd59161d32423f0e242a5ebf17471c21b6a6de8d3ef680e251,"Local",%REG_SZ%, %13%\CDSP\fastrpc_shell_unsigned_3.2
+hkr,mappings\fastrpc\default\a0024fa5415302fd59161d32423f0e242a5ebf17471c21b6a6de8d3ef680e251,"remote",%reg_sz%, \cdsp\fastrpc_shell_unsigned_3
+
+; Updating registry of libbenchmark_skel.so.3 to remote path \cdsp\libbenchmark_skel.so
+HKR,Mappings\FASTRPC\Default\4756d99bc737feea9b2fd092a05e767fdb3dc08a1fc5726e5a87441a15a334c8,"Local",%REG_SZ%, %13%\CDSP\libbenchmark_skel.so.3
+hkr,mappings\fastrpc\default\4756d99bc737feea9b2fd092a05e767fdb3dc08a1fc5726e5a87441a15a334c8,"remote",%reg_sz%, \cdsp\libbenchmark_skel.so
+
+; Updating registry of libc++.so.1.4 to remote path \cdsp\libc++.so.1
+HKR,Mappings\FASTRPC\Default\3fa7d1676633e8903ef19eb9b381f1f27d437115ba0da26998e383e889d903fa,"Local",%REG_SZ%, %13%\CDSP\libc++.so.1.4
+hkr,mappings\fastrpc\default\3fa7d1676633e8903ef19eb9b381f1f27d437115ba0da26998e383e889d903fa,"remote",%reg_sz%, \cdsp\libc++.so.1
+
+; Updating registry of libc++abi.so.1.5 to remote path \cdsp\libc++abi.so.1
+HKR,Mappings\FASTRPC\Default\fe1fa46ffc8f4fa19041ff2b08dc18a64006637726d376483583f145a72b30fc,"Local",%REG_SZ%, %13%\CDSP\libc++abi.so.1.5
+hkr,mappings\fastrpc\default\fe1fa46ffc8f4fa19041ff2b08dc18a64006637726d376483583f145a72b30fc,"remote",%reg_sz%, \cdsp\libc++abi.so.1
+
+; Updating registry of libhcp_rpc_skel.so.6 to remote path \cdsp\libhcp_rpc_skel.so
+HKR,Mappings\FASTRPC\Default\463ebadda4f5b46365649c17736466a617c27609e1b66f3e4abba192a9afe7af,"Local",%REG_SZ%, %13%\CDSP\libhcp_rpc_skel.so.6
+hkr,mappings\fastrpc\default\463ebadda4f5b46365649c17736466a617c27609e1b66f3e4abba192a9afe7af,"remote",%reg_sz%, \cdsp\libhcp_rpc_skel.so
+
+; Updating registry of libhta_dsp_skel.so.7 to remote path \cdsp\libhta_dsp_skel.so
+HKR,Mappings\FASTRPC\Default\c93fffb45069f5197dbdfef54b5b9e9fc516791b7b5613af4a55a68794fb60e7,"Local",%REG_SZ%, %13%\CDSP\libhta_dsp_skel.so.7
+hkr,mappings\fastrpc\default\c93fffb45069f5197dbdfef54b5b9e9fc516791b7b5613af4a55a68794fb60e7,"remote",%reg_sz%, \cdsp\libhta_dsp_skel.so
+
+; Updating registry of libimmotion_skel.so.8 to remote path \cdsp\libimmotion_skel.so
+HKR,Mappings\FASTRPC\Default\c3417fa6056aa0c252bbfc78ca8fe194bad045e6088e53ecd4f1da965295f608,"Local",%REG_SZ%, %13%\CDSP\libimmotion_skel.so.8
+hkr,mappings\fastrpc\default\c3417fa6056aa0c252bbfc78ca8fe194bad045e6088e53ecd4f1da965295f608,"remote",%reg_sz%, \cdsp\libimmotion_skel.so
+
+; Updating registry of libstabilitydomain_skel.so.9 to remote path \cdsp\libstabilitydomain_skel.so
+HKR,Mappings\FASTRPC\Default\b831e7c99f9a7a460afd6baa64aacc2a107fcd89bb748657006b454458e09778,"Local",%REG_SZ%, %13%\CDSP\libstabilitydomain_skel.so.9
+hkr,mappings\fastrpc\default\b831e7c99f9a7a460afd6baa64aacc2a107fcd89bb748657006b454458e09778,"remote",%reg_sz%, \cdsp\libstabilitydomain_skel.so
+
+; Updating registry of libsysmondomain_skel.so.10 to remote path \cdsp\libsysmondomain_skel.so
+HKR,Mappings\FASTRPC\Default\8a040f0f1604eec4cff5b02fc0c976ea05ad765e3a6258dee559ab20f4beb833,"Local",%REG_SZ%, %13%\CDSP\libsysmondomain_skel.so.10
+hkr,mappings\fastrpc\default\8a040f0f1604eec4cff5b02fc0c976ea05ad765e3a6258dee559ab20f4beb833,"remote",%reg_sz%, \cdsp\libsysmondomain_skel.so
+
+; Updating registry of libsysmonhvxthrottle_skel.so.11 to remote path \cdsp\libsysmonhvxthrottle_skel.so
+HKR,Mappings\FASTRPC\Default\ca3b1100788bfb51f9ae2fcccc889ba1d1a95503cd0ebb6855358811aaca05be,"Local",%REG_SZ%, %13%\CDSP\libsysmonhvxthrottle_skel.so.11
+hkr,mappings\fastrpc\default\ca3b1100788bfb51f9ae2fcccc889ba1d1a95503cd0ebb6855358811aaca05be,"remote",%reg_sz%, \cdsp\libsysmonhvxthrottle_skel.so
+
+; Updating registry of libsysmonquery_skel.so.12 to remote path \cdsp\libsysmonquery_skel.so
+HKR,Mappings\FASTRPC\Default\37825d17d5431eab5b504d216555d5af232a1cfa6b973984bf822c5e0f114d96,"Local",%REG_SZ%, %13%\CDSP\libsysmonquery_skel.so.12
+hkr,mappings\fastrpc\default\37825d17d5431eab5b504d216555d5af232a1cfa6b973984bf822c5e0f114d96,"remote",%reg_sz%, \cdsp\libsysmonquery_skel.so
+
+; Updating registry of libsysmon_skel.so.13 to remote path \cdsp\libsysmon_skel.so
+HKR,Mappings\FASTRPC\Default\0629f36ee64bed99ff60ef85e478d297bc0f67b2de4f02247524abec69164a46,"Local",%REG_SZ%, %13%\CDSP\libsysmon_skel.so.13
+hkr,mappings\fastrpc\default\0629f36ee64bed99ff60ef85e478d297bc0f67b2de4f02247524abec69164a46,"remote",%reg_sz%, \cdsp\libsysmon_skel.so
+
+; Updating registry of libvpp_aie.so.14 to remote path \cdsp\libvpp_aie.so
+HKR,Mappings\FASTRPC\Default\b86b14b739784e43cb79a361b2c274ec7f188c336c1aea90a9b3e52113a2930c,"Local",%REG_SZ%, %13%\CDSP\libvpp_aie.so.14
+hkr,mappings\fastrpc\default\b86b14b739784e43cb79a361b2c274ec7f188c336c1aea90a9b3e52113a2930c,"remote",%reg_sz%, \cdsp\libvpp_aie.so
+
+; Updating registry of libvpp_frc.so.15 to remote path \cdsp\libvpp_frc.so
+HKR,Mappings\FASTRPC\Default\19402a64177dfef20aae54aae7c160d1def866d61ba2a1714195db8fab40d32b,"Local",%REG_SZ%, %13%\CDSP\libvpp_frc.so.15
+hkr,mappings\fastrpc\default\19402a64177dfef20aae54aae7c160d1def866d61ba2a1714195db8fab40d32b,"remote",%reg_sz%, \cdsp\libvpp_frc.so
+
+; Updating registry of libvpp_mvp.so.16 to remote path \cdsp\libvpp_mvp.so
+HKR,Mappings\FASTRPC\Default\c12a8b6c666aab66724afccdff526c263d420bc4cf26a271d8ef58574bdf654f,"Local",%REG_SZ%, %13%\CDSP\libvpp_mvp.so.16
+hkr,mappings\fastrpc\default\c12a8b6c666aab66724afccdff526c263d420bc4cf26a271d8ef58574bdf654f,"remote",%reg_sz%, \cdsp\libvpp_mvp.so
+
+; Updating registry of libvpp_nr.so.17 to remote path \cdsp\libvpp_nr.so
+HKR,Mappings\FASTRPC\Default\8de26a12b73731b2528cf4674df8b8e44528b57af9cb4b3f585460ab7236c3b2,"Local",%REG_SZ%, %13%\CDSP\libvpp_nr.so.17
+hkr,mappings\fastrpc\default\8de26a12b73731b2528cf4674df8b8e44528b57af9cb4b3f585460ab7236c3b2,"remote",%reg_sz%, \cdsp\libvpp_nr.so
+
+; Updating registry of libvpp_qbr.so.18 to remote path \cdsp\libvpp_qbr.so
+HKR,Mappings\FASTRPC\Default\7bffce569aa7f4875034e52859514f3deb31999c795b2b3baa6fcbd0cf15b63f,"Local",%REG_SZ%, %13%\CDSP\libvpp_qbr.so.18
+hkr,mappings\fastrpc\default\7bffce569aa7f4875034e52859514f3deb31999c795b2b3baa6fcbd0cf15b63f,"remote",%reg_sz%, \cdsp\libvpp_qbr.so
+
+; Updating registry of libvpp_svc_skel.so.19 to remote path \cdsp\libvpp_svc_skel.so
+HKR,Mappings\FASTRPC\Default\da92e201185b69246579c29de93b108e8315110151fe53bf5ebe8019a888ef72,"Local",%REG_SZ%, %13%\CDSP\libvpp_svc_skel.so.19
+hkr,mappings\fastrpc\default\da92e201185b69246579c29de93b108e8315110151fe53bf5ebe8019a888ef72,"remote",%reg_sz%, \cdsp\libvpp_svc_skel.so
+
+; Updating registry of map_SHARED_LIBS_855.cdsp.prodQ.txt.20 to remote path \cdsp\map_SHARED_LIBS_855.cdsp.prodQ.txt
+HKR,Mappings\FASTRPC\Default\7b46059fd9b49f7e017711f2db37a73ccd5a8362c50a741c7181f226eb369cae,"Local",%REG_SZ%, %13%\CDSP\map_SHARED_LIBS_855.cdsp.prodQ.txt.20
+hkr,mappings\fastrpc\default\7b46059fd9b49f7e017711f2db37a73ccd5a8362c50a741c7181f226eb369cae,"remote",%reg_sz%, \cdsp\map_shared_libs_855.cdsp.prodq.txt
+
+; Updating registry of ubwcdma_dynlib.so.21 to remote path \cdsp\ubwcdma_dynlib.so
+HKR,Mappings\FASTRPC\Default\1fbd1207c7b887c2134399eefe0065116a3aa32266f3af8e1e78b4cd6b1f51d3,"Local",%REG_SZ%, %13%\CDSP\ubwcdma_dynlib.so.21
+hkr,mappings\fastrpc\default\1fbd1207c7b887c2134399eefe0065116a3aa32266f3af8e1e78b4cd6b1f51d3,"remote",%reg_sz%, \cdsp\ubwcdma_dynlib.so
+
+HKR,,FriendlyName,, %CDSP.FriendlyName%
+
+[Strings]
+;Localizable Strings
+SURFACE = "MollyTek"
+DiskId1 = "LG G8X Combined Subsystem Driver Installation Disk"
+CDSP.DeviceDesc = "LG G8X Hexagon(TM) 690 DSP"  
+PIL.DeviceDesc = "LG G8X System Manager Device"
+CDSP.FriendlyName = "LG G8X CDSP Subsystem"
+FASTRPC = 1
+TFTP = 2
+
+;Non-localizable Strings
+REG_SZ                 = 0x00000000
+REG_DWORD              = 0x00010001
+SPSVCINST_ASSOCSERVICE = 0x00000002
+

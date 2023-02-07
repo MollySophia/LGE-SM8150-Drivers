@@ -1,0 +1,399 @@
+;/*++
+;
+;Copyright (c) 2019-2020 by Qualcomm Technologies, Incorporated.  All Rights Reserved.
+;
+;Module Name:
+;    qcsubsys_ext_adsp.inx
+;
+;Abstract:
+;    INF file for installing ADSP
+;
+;--*/
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Extension
+ClassGuid={e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+ExtensionId={94427228-4b49-4694-aed8-2cb8fe42b21e}
+Provider=%Surface%
+DriverVer = 02/06/2023,1.0.1780.0001
+CatalogFile=G8X_subextadsp.cat
+PnpLockDown=1
+
+[DestinationDirs]
+WmaStdDecoderModule.so.1.34 = 13,\ADSP
+WmaProDecoderModule.so.1.33 = 13,\ADSP
+VorbisDecoderModule.so.1.32 = 13,\ADSP
+VoiceWakeup_V2_Module.so.1.31 = 13,\ADSP
+SVACmnModule.so.1.30 = 13,\ADSP
+sm_fluence_sb_module.so.1.29 = 13,\ADSP
+smecns_v2_module_fv9.so.1.28 = 13,\ADSP
+SAPlusCmnModule.so.1.27 = 13,\ADSP
+mm_fluence_sb_module.so.1.26 = 13,\ADSP
+map_SHARED_LIBS_855.adsp.prodQ.txt.25 = 13,\ADSP
+map_AVS_SHARED_LIBS_855.adsp.prodQ.txt.24 = 13,\ADSP
+libsysmon_skel.so.23 = 13,\ADSP
+libsysmonquery_skel.so.22 = 13,\ADSP
+libsysmondomain_skel.so.21 = 13,\ADSP
+libstabilitydomain_skel.so.20 = 13,\ADSP
+LdacModule.so.1.19 = 13,\ADSP
+HeaacDecoderModule.so.1.18 = 13,\ADSP
+fluence_voiceplus_module.so.1.17 = 13,\ADSP
+fluence_sm_module_fv9.so.1.16 = 13,\ADSP
+fluence_pro_vr_module_fv9.so.1.15 = 13,\ADSP
+fluence_pro_vc_module_fv9.so.1.14 = 13,\ADSP
+fluence_ef_module_fv9.so.1.13 = 13,\ADSP
+fluence_bs_module_fv9.so.1.12 = 13,\ADSP
+FlacDecoderModule.so.1.11 = 13,\ADSP
+ffv_module_fv9.so.1.10 = 13,\ADSP
+ffns_module_fv9.so.1.9 = 13,\ADSP
+fastrpc_shell_0.8 = 13,\ADSP
+EtsiEaacPlusEncAndCmnModule.so.1.7 = 13,\ADSP
+EtsiAmrWbPlusDecModule.so.1.6 = 13,\ADSP
+CFCMModule.so.1.5 = 13,\ADSP
+AudioSphereModule.so.1.4 = 13,\ADSP
+AudioContextDetection.so.1.3 = 13,\ADSP
+ApeDecoderModule.so.1.2 = 13,\ADSP
+AlacDecoderModule.so.1.1 = 13,\ADSP
+SOFiles_ADSP = 13
+MBNFiles_ADSP = 13
+
+[SourceDisksNames]
+1 = %DiskId1%
+
+[SourceDisksFiles]
+WmaStdDecoderModule.so.1.34 = 1,\ADSP
+WmaProDecoderModule.so.1.33 = 1,\ADSP
+VorbisDecoderModule.so.1.32 = 1,\ADSP
+VoiceWakeup_V2_Module.so.1.31 = 1,\ADSP
+SVACmnModule.so.1.30 = 1,\ADSP
+sm_fluence_sb_module.so.1.29 = 1,\ADSP
+smecns_v2_module_fv9.so.1.28 = 1,\ADSP
+SAPlusCmnModule.so.1.27 = 1,\ADSP
+mm_fluence_sb_module.so.1.26 = 1,\ADSP
+map_SHARED_LIBS_855.adsp.prodQ.txt.25 = 1,\ADSP
+map_AVS_SHARED_LIBS_855.adsp.prodQ.txt.24 = 1,\ADSP
+libsysmon_skel.so.23 = 1,\ADSP
+libsysmonquery_skel.so.22 = 1,\ADSP
+libsysmondomain_skel.so.21 = 1,\ADSP
+libstabilitydomain_skel.so.20 = 1,\ADSP
+LdacModule.so.1.19 = 1,\ADSP
+HeaacDecoderModule.so.1.18 = 1,\ADSP
+fluence_voiceplus_module.so.1.17 = 1,\ADSP
+fluence_sm_module_fv9.so.1.16 = 1,\ADSP
+fluence_pro_vr_module_fv9.so.1.15 = 1,\ADSP
+fluence_pro_vc_module_fv9.so.1.14 = 1,\ADSP
+fluence_ef_module_fv9.so.1.13 = 1,\ADSP
+fluence_bs_module_fv9.so.1.12 = 1,\ADSP
+FlacDecoderModule.so.1.11 = 1,\ADSP
+ffv_module_fv9.so.1.10 = 1,\ADSP
+ffns_module_fv9.so.1.9 = 1,\ADSP
+fastrpc_shell_0.8 = 1,\ADSP
+EtsiEaacPlusEncAndCmnModule.so.1.7 = 1,\ADSP
+EtsiAmrWbPlusDecModule.so.1.6 = 1,\ADSP
+CFCMModule.so.1.5 = 1,\ADSP
+AudioSphereModule.so.1.4 = 1,\ADSP
+AudioContextDetection.so.1.3 = 1,\ADSP
+ApeDecoderModule.so.1.2 = 1,\ADSP
+AlacDecoderModule.so.1.1 = 1,\ADSP
+qcadsp8150.mbn = 1
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+;*****************************************
+; Subsystem Driver Install Section
+;*****************************************
+
+[Manufacturer]
+%Surface%=Extension,NTARM64
+
+[Extension.NTARM64]
+%ADSP.DeviceDesc%=SUBSYS_Device_ADSP_ext, ACPI\VEN_QCOM&DEV_051D&SUBSYS_CLS08150
+%ADSP.DeviceDesc%=SUBSYS_Device_ADSP_ext, ACPI\VEN_QCOM&DEV_051D&SUBSYS_CDP08150
+%ADSP.DeviceDesc%=SUBSYS_Device_ADSP_ext, ACPI\VEN_QCOM&DEV_051D&SUBSYS_MTP08150
+%ADSP.DeviceDesc%=SUBSYS_Device_ADSP_ext, ACPI\VEN_QCOM&DEV_051D&SUBSYS_MTP08150
+%PIL.DeviceDesc%=PIL_Device_Ext, ACPI\VEN_QCOM&DEV_051B&SUBSYS_MTP08150
+%PIL.DeviceDesc%=PIL_Device_Ext, ACPI\VEN_QCOM&DEV_051B&SUBSYS_MTP08150
+%PIL.DeviceDesc%=PIL_Device_Ext, ACPI\VEN_QCOM&DEV_051B&SUBSYS_MTPB8150
+%PIL.DeviceDesc%=PIL_Device_Ext, ACPI\VEN_QCOM&DEV_051B&SUBSYS_MTPC8150
+%PIL.DeviceDesc%=PIL_Device_Ext, ACPI\VEN_QCOM&DEV_051B&SUBSYS_MTPD8150
+%PIL.DeviceDesc%=PIL_Device_Ext, ACPI\VEN_QCOM&DEV_051B&SUBSYS_CLS08150
+%PIL.DeviceDesc%=PIL_Device_Ext, ACPI\VEN_QCOM&DEV_051B&SUBSYS_CLSB8150
+%PIL.DeviceDesc%=PIL_Device_Ext, ACPI\VEN_QCOM&DEV_051B&SUBSYS_CLSC8150
+%PIL.DeviceDesc%=PIL_Device_Ext, ACPI\VEN_QCOM&DEV_051B&SUBSYS_CDP08150
+%PIL.DeviceDesc%=PIL_Device_Ext_APQ, ACPI\VEN_QCOM&DEV_051B&SUBSYS_SCNM8150
+
+[SUBSYS_Device_ADSP_ext.NT]
+CopyFiles=WmaStdDecoderModule.so.1.34,WmaProDecoderModule.so.1.33,VorbisDecoderModule.so.1.32,VoiceWakeup_V2_Module.so.1.31,SVACmnModule.so.1.30,sm_fluence_sb_module.so.1.29,smecns_v2_module_fv9.so.1.28,SAPlusCmnModule.so.1.27,mm_fluence_sb_module.so.1.26,map_SHARED_LIBS_855.adsp.prodQ.txt.25,map_AVS_SHARED_LIBS_855.adsp.prodQ.txt.24,libsysmon_skel.so.23,libsysmonquery_skel.so.22,libsysmondomain_skel.so.21,libstabilitydomain_skel.so.20,LdacModule.so.1.19,HeaacDecoderModule.so.1.18,fluence_voiceplus_module.so.1.17,fluence_sm_module_fv9.so.1.16,fluence_pro_vr_module_fv9.so.1.15,fluence_pro_vc_module_fv9.so.1.14,fluence_ef_module_fv9.so.1.13,fluence_bs_module_fv9.so.1.12,FlacDecoderModule.so.1.11,ffv_module_fv9.so.1.10,ffns_module_fv9.so.1.9,fastrpc_shell_0.8,EtsiEaacPlusEncAndCmnModule.so.1.7,EtsiAmrWbPlusDecModule.so.1.6,CFCMModule.so.1.5,AudioSphereModule.so.1.4,AudioContextDetection.so.1.3,ApeDecoderModule.so.1.2,AlacDecoderModule.so.1.1,SOFiles_ADSP,MBNFiles_ADSP
+AddReg=SUBSYSReg
+
+[SUBSYS_Device_ADSP_ext.NT.HW]
+AddReg=SUBSYSReg_common,HashMapping_ADSP
+
+[MBNFiles_ADSP]
+qcadsp8150.mbn 
+
+[SUBSYSReg]
+;Image path for ADSP image
+HKR,,"AdspImagePath",%REG_SZ%,"%13%\qcadsp8150.mbn"
+
+[SUBSYSReg_common]
+HKR,,"WaitForVolStartupAppComplete",%REG_DWORD%,1
+;PathMappingKeyName defines the subkey name under protocol key,
+;where subsys will look for local-remote path mappings. The default value is "Default".
+;If overwritten by OEMs, they must ensure to generate path mappings under this subkey.
+;If defined, subsys looks under HKR,Mappings\<Protocol>\<PathMappingKeyName> instead of HKR,Mappings\<Protocol>
+;This value can have maximum length of 128 excluding NULL character.
+HKR,Mappings,"PathMappingKeyName",%REG_SZ%,"Default"
+
+[PIL_Device_Ext.NT]
+·
+[PIL_Device_Ext.NT.HW]
+Addreg=PIL_Reg_common,PIL_Reg_MSM
+
+
+[PIL_Device_Ext_APQ.NT]
+
+[PIL_Device_Ext_APQ.NT.HW]
+Addreg=PIL_Reg_common,PIL_Reg_APQ
+
+
+[PIL_Reg_common]
+HKR ,SubsystemLoad\ADSP,MemoryAlignment,%REG_DWORD%,0x00100000
+
+[PIL_Reg_MSM]
+; ADSP registry values
+HKR ,SubsystemLoad\ADSP,MemoryReservation,%REG_DWORD%,0x2200000
+
+[PIL_Reg_APQ]
+; ADSP registry values
+HKR ,SubsystemLoad\ADSP,MemoryReservation,%REG_DWORD%,0x2200000
+
+;**********************************************************************************************
+;    DONOT DELETE THE EMPTY PLACEHOLDERS BELOW. THEY WILL BE AUTOPOPULATED DURING BUILD TIME
+;**********************************************************************************************
+
+[SOFiles_ADSP]
+[WmaStdDecoderModule.so.1.34]
+WmaStdDecoderModule.so.1.34
+[WmaProDecoderModule.so.1.33]
+WmaProDecoderModule.so.1.33
+[VorbisDecoderModule.so.1.32]
+VorbisDecoderModule.so.1.32
+[VoiceWakeup_V2_Module.so.1.31]
+VoiceWakeup_V2_Module.so.1.31
+[SVACmnModule.so.1.30]
+SVACmnModule.so.1.30
+[sm_fluence_sb_module.so.1.29]
+sm_fluence_sb_module.so.1.29
+[smecns_v2_module_fv9.so.1.28]
+smecns_v2_module_fv9.so.1.28
+[SAPlusCmnModule.so.1.27]
+SAPlusCmnModule.so.1.27
+[mm_fluence_sb_module.so.1.26]
+mm_fluence_sb_module.so.1.26
+[map_SHARED_LIBS_855.adsp.prodQ.txt.25]
+map_SHARED_LIBS_855.adsp.prodQ.txt.25
+[map_AVS_SHARED_LIBS_855.adsp.prodQ.txt.24]
+map_AVS_SHARED_LIBS_855.adsp.prodQ.txt.24
+[libsysmon_skel.so.23]
+libsysmon_skel.so.23
+[libsysmonquery_skel.so.22]
+libsysmonquery_skel.so.22
+[libsysmondomain_skel.so.21]
+libsysmondomain_skel.so.21
+[libstabilitydomain_skel.so.20]
+libstabilitydomain_skel.so.20
+[LdacModule.so.1.19]
+LdacModule.so.1.19
+[HeaacDecoderModule.so.1.18]
+HeaacDecoderModule.so.1.18
+[fluence_voiceplus_module.so.1.17]
+fluence_voiceplus_module.so.1.17
+[fluence_sm_module_fv9.so.1.16]
+fluence_sm_module_fv9.so.1.16
+[fluence_pro_vr_module_fv9.so.1.15]
+fluence_pro_vr_module_fv9.so.1.15
+[fluence_pro_vc_module_fv9.so.1.14]
+fluence_pro_vc_module_fv9.so.1.14
+[fluence_ef_module_fv9.so.1.13]
+fluence_ef_module_fv9.so.1.13
+[fluence_bs_module_fv9.so.1.12]
+fluence_bs_module_fv9.so.1.12
+[FlacDecoderModule.so.1.11]
+FlacDecoderModule.so.1.11
+[ffv_module_fv9.so.1.10]
+ffv_module_fv9.so.1.10
+[ffns_module_fv9.so.1.9]
+ffns_module_fv9.so.1.9
+[fastrpc_shell_0.8]
+fastrpc_shell_0.8
+[EtsiEaacPlusEncAndCmnModule.so.1.7]
+EtsiEaacPlusEncAndCmnModule.so.1.7
+[EtsiAmrWbPlusDecModule.so.1.6]
+EtsiAmrWbPlusDecModule.so.1.6
+[CFCMModule.so.1.5]
+CFCMModule.so.1.5
+[AudioSphereModule.so.1.4]
+AudioSphereModule.so.1.4
+[AudioContextDetection.so.1.3]
+AudioContextDetection.so.1.3
+[ApeDecoderModule.so.1.2]
+ApeDecoderModule.so.1.2
+[AlacDecoderModule.so.1.1]
+AlacDecoderModule.so.1.1
+
+;To configure refer PathMappingKeyName registry
+[HashMapping_ADSP]
+
+; Updating registry of AlacDecoderModule.so.1.1 to remote path \adsp\AlacDecoderModule.so.1
+HKR,Mappings\FASTRPC\Default\1c1c792eac86605673d4a9291f76a06070436e37b771d2f8ac8fcc96a762c52e,"Local",%REG_SZ%, %13%\ADSP\AlacDecoderModule.so.1.1
+hkr,mappings\fastrpc\default\1c1c792eac86605673d4a9291f76a06070436e37b771d2f8ac8fcc96a762c52e,"remote",%reg_sz%, \adsp\alacdecodermodule.so.1
+
+; Updating registry of ApeDecoderModule.so.1.2 to remote path \adsp\ApeDecoderModule.so.1
+HKR,Mappings\FASTRPC\Default\ff40c455427305d586cfcaa13e7c48bab774e8ee41f036fa49af9e4b41fe4db6,"Local",%REG_SZ%, %13%\ADSP\ApeDecoderModule.so.1.2
+hkr,mappings\fastrpc\default\ff40c455427305d586cfcaa13e7c48bab774e8ee41f036fa49af9e4b41fe4db6,"remote",%reg_sz%, \adsp\apedecodermodule.so.1
+
+; Updating registry of AudioContextDetection.so.1.3 to remote path \adsp\AudioContextDetection.so.1
+HKR,Mappings\FASTRPC\Default\59d5d51c7176e6e6d8879450c18ef7d7972794cbf8f78b3548de8f28d74af7d9,"Local",%REG_SZ%, %13%\ADSP\AudioContextDetection.so.1.3
+hkr,mappings\fastrpc\default\59d5d51c7176e6e6d8879450c18ef7d7972794cbf8f78b3548de8f28d74af7d9,"remote",%reg_sz%, \adsp\audiocontextdetection.so.1
+
+; Updating registry of AudioSphereModule.so.1.4 to remote path \adsp\AudioSphereModule.so.1
+HKR,Mappings\FASTRPC\Default\d4dd0ec9fb4cbcf9322c5541aae177a2497b9a7e5b7e5b1d25ab8b55ba6b064f,"Local",%REG_SZ%, %13%\ADSP\AudioSphereModule.so.1.4
+hkr,mappings\fastrpc\default\d4dd0ec9fb4cbcf9322c5541aae177a2497b9a7e5b7e5b1d25ab8b55ba6b064f,"remote",%reg_sz%, \adsp\audiospheremodule.so.1
+
+; Updating registry of CFCMModule.so.1.5 to remote path \adsp\CFCMModule.so.1
+HKR,Mappings\FASTRPC\Default\9766567ecfea696f6b30fa01a4c420a06d512611f01ce96613cc58abc9493b23,"Local",%REG_SZ%, %13%\ADSP\CFCMModule.so.1.5
+hkr,mappings\fastrpc\default\9766567ecfea696f6b30fa01a4c420a06d512611f01ce96613cc58abc9493b23,"remote",%reg_sz%, \adsp\cfcmmodule.so.1
+
+; Updating registry of EtsiAmrWbPlusDecModule.so.1.6 to remote path \adsp\EtsiAmrWbPlusDecModule.so.1
+HKR,Mappings\FASTRPC\Default\79840071cd1f005978a9dcffa4a23ea6649193029bd1b8102be5302d9edefaac,"Local",%REG_SZ%, %13%\ADSP\EtsiAmrWbPlusDecModule.so.1.6
+hkr,mappings\fastrpc\default\79840071cd1f005978a9dcffa4a23ea6649193029bd1b8102be5302d9edefaac,"remote",%reg_sz%, \adsp\etsiamrwbplusdecmodule.so.1
+
+; Updating registry of EtsiEaacPlusEncAndCmnModule.so.1.7 to remote path \adsp\EtsiEaacPlusEncAndCmnModule.so.1
+HKR,Mappings\FASTRPC\Default\34665c3af431b5b2f86fd00207850dc862e50c14c2426984cc271bc128982d09,"Local",%REG_SZ%, %13%\ADSP\EtsiEaacPlusEncAndCmnModule.so.1.7
+hkr,mappings\fastrpc\default\34665c3af431b5b2f86fd00207850dc862e50c14c2426984cc271bc128982d09,"remote",%reg_sz%, \adsp\etsieaacplusencandcmnmodule.so.1
+
+; Updating registry of fastrpc_shell_0.8 to remote path \adsp\fastrpc_shell_0
+HKR,Mappings\FASTRPC\Default\8af38342120f9577baad9703d1692e36c1d41eef529acd48ec68ca582d1bb1b6,"Local",%REG_SZ%, %13%\ADSP\fastrpc_shell_0.8
+hkr,mappings\fastrpc\default\8af38342120f9577baad9703d1692e36c1d41eef529acd48ec68ca582d1bb1b6,"remote",%reg_sz%, \adsp\fastrpc_shell_0
+
+; Updating registry of ffns_module_fv9.so.1.9 to remote path \adsp\ffns_module_fv9.so.1
+HKR,Mappings\FASTRPC\Default\10f78bcd2a22e870610fdb781060dc59189a8ffe8789ac6784d5aa3321b1d7c7,"Local",%REG_SZ%, %13%\ADSP\ffns_module_fv9.so.1.9
+hkr,mappings\fastrpc\default\10f78bcd2a22e870610fdb781060dc59189a8ffe8789ac6784d5aa3321b1d7c7,"remote",%reg_sz%, \adsp\ffns_module_fv9.so.1
+
+; Updating registry of ffv_module_fv9.so.1.10 to remote path \adsp\ffv_module_fv9.so.1
+HKR,Mappings\FASTRPC\Default\66414cac89512fa6d1721fbeb30af49149c58db74dc0b1a74ff5a8ac7c4f75e7,"Local",%REG_SZ%, %13%\ADSP\ffv_module_fv9.so.1.10
+hkr,mappings\fastrpc\default\66414cac89512fa6d1721fbeb30af49149c58db74dc0b1a74ff5a8ac7c4f75e7,"remote",%reg_sz%, \adsp\ffv_module_fv9.so.1
+
+; Updating registry of FlacDecoderModule.so.1.11 to remote path \adsp\FlacDecoderModule.so.1
+HKR,Mappings\FASTRPC\Default\b03930fa9b9a4ec37723611d1efd962491ee7cc6d79a04f50c3dc756ed6a8555,"Local",%REG_SZ%, %13%\ADSP\FlacDecoderModule.so.1.11
+hkr,mappings\fastrpc\default\b03930fa9b9a4ec37723611d1efd962491ee7cc6d79a04f50c3dc756ed6a8555,"remote",%reg_sz%, \adsp\flacdecodermodule.so.1
+
+; Updating registry of fluence_bs_module_fv9.so.1.12 to remote path \adsp\fluence_bs_module_fv9.so.1
+HKR,Mappings\FASTRPC\Default\9dc94830875753e5d38c9cdc6234fe694acace82019d762677720089c93ebc13,"Local",%REG_SZ%, %13%\ADSP\fluence_bs_module_fv9.so.1.12
+hkr,mappings\fastrpc\default\9dc94830875753e5d38c9cdc6234fe694acace82019d762677720089c93ebc13,"remote",%reg_sz%, \adsp\fluence_bs_module_fv9.so.1
+
+; Updating registry of fluence_ef_module_fv9.so.1.13 to remote path \adsp\fluence_ef_module_fv9.so.1
+HKR,Mappings\FASTRPC\Default\93078fbf35ce0e9100404cce395bf30cc41d5083e150e1d1000f9a288e562b00,"Local",%REG_SZ%, %13%\ADSP\fluence_ef_module_fv9.so.1.13
+hkr,mappings\fastrpc\default\93078fbf35ce0e9100404cce395bf30cc41d5083e150e1d1000f9a288e562b00,"remote",%reg_sz%, \adsp\fluence_ef_module_fv9.so.1
+
+; Updating registry of fluence_pro_vc_module_fv9.so.1.14 to remote path \adsp\fluence_pro_vc_module_fv9.so.1
+HKR,Mappings\FASTRPC\Default\6b882f2b4a9b1872b60ce4abdec4cc2494b040f93478530963dd2989f19194a9,"Local",%REG_SZ%, %13%\ADSP\fluence_pro_vc_module_fv9.so.1.14
+hkr,mappings\fastrpc\default\6b882f2b4a9b1872b60ce4abdec4cc2494b040f93478530963dd2989f19194a9,"remote",%reg_sz%, \adsp\fluence_pro_vc_module_fv9.so.1
+
+; Updating registry of fluence_pro_vr_module_fv9.so.1.15 to remote path \adsp\fluence_pro_vr_module_fv9.so.1
+HKR,Mappings\FASTRPC\Default\dd5328fbb3208e9793d87cbe6403a4128a57574b777e3d73a6ad2a8280d6d3d1,"Local",%REG_SZ%, %13%\ADSP\fluence_pro_vr_module_fv9.so.1.15
+hkr,mappings\fastrpc\default\dd5328fbb3208e9793d87cbe6403a4128a57574b777e3d73a6ad2a8280d6d3d1,"remote",%reg_sz%, \adsp\fluence_pro_vr_module_fv9.so.1
+
+; Updating registry of fluence_sm_module_fv9.so.1.16 to remote path \adsp\fluence_sm_module_fv9.so.1
+HKR,Mappings\FASTRPC\Default\a1734dae696832661e03f2ceff06bfdcc766464e865965029b18880c851f9066,"Local",%REG_SZ%, %13%\ADSP\fluence_sm_module_fv9.so.1.16
+hkr,mappings\fastrpc\default\a1734dae696832661e03f2ceff06bfdcc766464e865965029b18880c851f9066,"remote",%reg_sz%, \adsp\fluence_sm_module_fv9.so.1
+
+; Updating registry of fluence_voiceplus_module.so.1.17 to remote path \adsp\fluence_voiceplus_module.so.1
+HKR,Mappings\FASTRPC\Default\fd4aebcd971e84f0dae879219a4b5ea4efef41f7a83fb902566f294e72cc62db,"Local",%REG_SZ%, %13%\ADSP\fluence_voiceplus_module.so.1.17
+hkr,mappings\fastrpc\default\fd4aebcd971e84f0dae879219a4b5ea4efef41f7a83fb902566f294e72cc62db,"remote",%reg_sz%, \adsp\fluence_voiceplus_module.so.1
+
+; Updating registry of HeaacDecoderModule.so.1.18 to remote path \adsp\HeaacDecoderModule.so.1
+HKR,Mappings\FASTRPC\Default\cc0fc2fc51be7ebbbb25df0d105c9de2a4d6e97943ac920f0f2d77fa5dd93549,"Local",%REG_SZ%, %13%\ADSP\HeaacDecoderModule.so.1.18
+hkr,mappings\fastrpc\default\cc0fc2fc51be7ebbbb25df0d105c9de2a4d6e97943ac920f0f2d77fa5dd93549,"remote",%reg_sz%, \adsp\heaacdecodermodule.so.1
+
+; Updating registry of LdacModule.so.1.19 to remote path \adsp\LdacModule.so.1
+HKR,Mappings\FASTRPC\Default\7660cb49cdd302d16fe3037f079852fc0d8606472910ffec9700b690c14dd005,"Local",%REG_SZ%, %13%\ADSP\LdacModule.so.1.19
+hkr,mappings\fastrpc\default\7660cb49cdd302d16fe3037f079852fc0d8606472910ffec9700b690c14dd005,"remote",%reg_sz%, \adsp\ldacmodule.so.1
+
+; Updating registry of libstabilitydomain_skel.so.20 to remote path \adsp\libstabilitydomain_skel.so
+HKR,Mappings\FASTRPC\Default\20afa96cc847f5a1f437b5efa6623acf4b0b672d6b3859fe541c050a0016a7cb,"Local",%REG_SZ%, %13%\ADSP\libstabilitydomain_skel.so.20
+hkr,mappings\fastrpc\default\20afa96cc847f5a1f437b5efa6623acf4b0b672d6b3859fe541c050a0016a7cb,"remote",%reg_sz%, \adsp\libstabilitydomain_skel.so
+
+; Updating registry of libsysmondomain_skel.so.21 to remote path \adsp\libsysmondomain_skel.so
+HKR,Mappings\FASTRPC\Default\4ce639da0fb8f58c22f782519b335e35c40090913c78f095d282edda885f6854,"Local",%REG_SZ%, %13%\ADSP\libsysmondomain_skel.so.21
+hkr,mappings\fastrpc\default\4ce639da0fb8f58c22f782519b335e35c40090913c78f095d282edda885f6854,"remote",%reg_sz%, \adsp\libsysmondomain_skel.so
+
+; Updating registry of libsysmonquery_skel.so.22 to remote path \adsp\libsysmonquery_skel.so
+HKR,Mappings\FASTRPC\Default\bb2e8740f73ea96bfde9d11c6a1b697c65b1c6ee7f05ec4dd1921a9c6b59ae61,"Local",%REG_SZ%, %13%\ADSP\libsysmonquery_skel.so.22
+hkr,mappings\fastrpc\default\bb2e8740f73ea96bfde9d11c6a1b697c65b1c6ee7f05ec4dd1921a9c6b59ae61,"remote",%reg_sz%, \adsp\libsysmonquery_skel.so
+
+; Updating registry of libsysmon_skel.so.23 to remote path \adsp\libsysmon_skel.so
+HKR,Mappings\FASTRPC\Default\933d90033a523644b24ff39168906757f9bc7d9d9514e5310452131a18269705,"Local",%REG_SZ%, %13%\ADSP\libsysmon_skel.so.23
+hkr,mappings\fastrpc\default\933d90033a523644b24ff39168906757f9bc7d9d9514e5310452131a18269705,"remote",%reg_sz%, \adsp\libsysmon_skel.so
+
+; Updating registry of map_AVS_SHARED_LIBS_855.adsp.prodQ.txt.24 to remote path \adsp\map_AVS_SHARED_LIBS_855.adsp.prodQ.txt
+HKR,Mappings\FASTRPC\Default\f77e13f486fc3729f685014236809793a67f47980ae8ac80f37ade4286ba8a59,"Local",%REG_SZ%, %13%\ADSP\map_AVS_SHARED_LIBS_855.adsp.prodQ.txt.24
+hkr,mappings\fastrpc\default\f77e13f486fc3729f685014236809793a67f47980ae8ac80f37ade4286ba8a59,"remote",%reg_sz%, \adsp\map_avs_shared_libs_855.adsp.prodq.txt
+
+; Updating registry of map_SHARED_LIBS_855.adsp.prodQ.txt.25 to remote path \adsp\map_SHARED_LIBS_855.adsp.prodQ.txt
+HKR,Mappings\FASTRPC\Default\29829a24c065fe0b2ec58f1837deca7749e2d75a4bc64a2f73129dcc4a9773d0,"Local",%REG_SZ%, %13%\ADSP\map_SHARED_LIBS_855.adsp.prodQ.txt.25
+hkr,mappings\fastrpc\default\29829a24c065fe0b2ec58f1837deca7749e2d75a4bc64a2f73129dcc4a9773d0,"remote",%reg_sz%, \adsp\map_shared_libs_855.adsp.prodq.txt
+
+; Updating registry of mm_fluence_sb_module.so.1.26 to remote path \adsp\mm_fluence_sb_module.so.1
+HKR,Mappings\FASTRPC\Default\e003ffb30f65d33cd14b75d2843569b9256c4f0e7895408d426f3f4d3f2b084d,"Local",%REG_SZ%, %13%\ADSP\mm_fluence_sb_module.so.1.26
+hkr,mappings\fastrpc\default\e003ffb30f65d33cd14b75d2843569b9256c4f0e7895408d426f3f4d3f2b084d,"remote",%reg_sz%, \adsp\mm_fluence_sb_module.so.1
+
+; Updating registry of SAPlusCmnModule.so.1.27 to remote path \adsp\SAPlusCmnModule.so.1
+HKR,Mappings\FASTRPC\Default\40c0a4018c48e1f81fe8b770859ff5ce8962575757b9141201b2598dcece055b,"Local",%REG_SZ%, %13%\ADSP\SAPlusCmnModule.so.1.27
+hkr,mappings\fastrpc\default\40c0a4018c48e1f81fe8b770859ff5ce8962575757b9141201b2598dcece055b,"remote",%reg_sz%, \adsp\sapluscmnmodule.so.1
+
+; Updating registry of smecns_v2_module_fv9.so.1.28 to remote path \adsp\smecns_v2_module_fv9.so.1
+HKR,Mappings\FASTRPC\Default\13198f12912b2ee4e8dfad68e6f4a04083418e1660b77cd817f0b48ddfb87fd4,"Local",%REG_SZ%, %13%\ADSP\smecns_v2_module_fv9.so.1.28
+hkr,mappings\fastrpc\default\13198f12912b2ee4e8dfad68e6f4a04083418e1660b77cd817f0b48ddfb87fd4,"remote",%reg_sz%, \adsp\smecns_v2_module_fv9.so.1
+
+; Updating registry of sm_fluence_sb_module.so.1.29 to remote path \adsp\sm_fluence_sb_module.so.1
+HKR,Mappings\FASTRPC\Default\91be8dbc21a04d7527d8e8aac5c52f86c0d2f720956bcad8961544bfe409ee7c,"Local",%REG_SZ%, %13%\ADSP\sm_fluence_sb_module.so.1.29
+hkr,mappings\fastrpc\default\91be8dbc21a04d7527d8e8aac5c52f86c0d2f720956bcad8961544bfe409ee7c,"remote",%reg_sz%, \adsp\sm_fluence_sb_module.so.1
+
+; Updating registry of SVACmnModule.so.1.30 to remote path \adsp\SVACmnModule.so.1
+HKR,Mappings\FASTRPC\Default\406230471a6ceb99c3779d622cc8b03e087371415bf47f1d0879a55ff33e596e,"Local",%REG_SZ%, %13%\ADSP\SVACmnModule.so.1.30
+hkr,mappings\fastrpc\default\406230471a6ceb99c3779d622cc8b03e087371415bf47f1d0879a55ff33e596e,"remote",%reg_sz%, \adsp\svacmnmodule.so.1
+
+; Updating registry of VoiceWakeup_V2_Module.so.1.31 to remote path \adsp\VoiceWakeup_V2_Module.so.1
+HKR,Mappings\FASTRPC\Default\6e6189dd7d9a0140f08e0d65a0e3ed49373c5a2fd15e7a9d96e9c6c38e12308c,"Local",%REG_SZ%, %13%\ADSP\VoiceWakeup_V2_Module.so.1.31
+hkr,mappings\fastrpc\default\6e6189dd7d9a0140f08e0d65a0e3ed49373c5a2fd15e7a9d96e9c6c38e12308c,"remote",%reg_sz%, \adsp\voicewakeup_v2_module.so.1
+
+; Updating registry of VorbisDecoderModule.so.1.32 to remote path \adsp\VorbisDecoderModule.so.1
+HKR,Mappings\FASTRPC\Default\d80c6e7581464afb40c7466072faa5363c66eecec31870982648404487f71c6d,"Local",%REG_SZ%, %13%\ADSP\VorbisDecoderModule.so.1.32
+hkr,mappings\fastrpc\default\d80c6e7581464afb40c7466072faa5363c66eecec31870982648404487f71c6d,"remote",%reg_sz%, \adsp\vorbisdecodermodule.so.1
+
+; Updating registry of WmaProDecoderModule.so.1.33 to remote path \adsp\WmaProDecoderModule.so.1
+HKR,Mappings\FASTRPC\Default\c86c5f33f849b9bf3a7871c3fadea21dab750d6422ec40e69f948ab2ccd78be5,"Local",%REG_SZ%, %13%\ADSP\WmaProDecoderModule.so.1.33
+hkr,mappings\fastrpc\default\c86c5f33f849b9bf3a7871c3fadea21dab750d6422ec40e69f948ab2ccd78be5,"remote",%reg_sz%, \adsp\wmaprodecodermodule.so.1
+
+; Updating registry of WmaStdDecoderModule.so.1.34 to remote path \adsp\WmaStdDecoderModule.so.1
+HKR,Mappings\FASTRPC\Default\059c7b4557f693d10ddd76fa96d63dfb0295338a8a638ab45c4de668b187ad7b,"Local",%REG_SZ%, %13%\ADSP\WmaStdDecoderModule.so.1.34
+hkr,mappings\fastrpc\default\059c7b4557f693d10ddd76fa96d63dfb0295338a8a638ab45c4de668b187ad7b,"remote",%reg_sz%, \adsp\wmastddecodermodule.so.1
+
+[Strings]
+;Localizable Strings
+Surface = "G8X"
+DiskId1 = "LG G8X Combined Subsystem Driver Installation Disk"
+ADSP.DeviceDesc = "LG G8X Aqstic(TM)"         
+PIL.DeviceDesc = "LG G8X System Manager Device"
+FASTRPC = 1
+TFTP = 2
+
+;Non-localizable Strings
+REG_SZ                 = 0x00000000
+REG_DWORD              = 0x00010001
+SPSVCINST_ASSOCSERVICE = 0x00000002
+
