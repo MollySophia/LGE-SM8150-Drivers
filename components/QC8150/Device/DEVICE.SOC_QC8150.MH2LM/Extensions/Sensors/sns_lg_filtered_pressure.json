@@ -1,0 +1,15 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Dragon", "Surf", "QRD", "HDK"],
+    "soc_id": ["291", "246", "305", "321", "336", "341", "339"]
+  },
+  "sns_lg_filtered_pressure": {
+    "owner": "sns_lg_filtered_pressure",
+    "filter_type": {"type": "int", "ver": "0",
+      "data": "1"
+    },
+    "median_window_second": {"type": "int", "ver": "0",
+      "data": "3"
+    }
+  }
+}

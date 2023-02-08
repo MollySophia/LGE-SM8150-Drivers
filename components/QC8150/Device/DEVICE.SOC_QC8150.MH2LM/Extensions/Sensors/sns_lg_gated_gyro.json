@@ -1,0 +1,11 @@
+{
+  "config": {
+    "hw_platform": [ "MTP", "Dragon", "Surf", "QRD", "HDK"],
+    "soc_id": ["291", "246", "305", "321", "336", "347", "300", "301", "341", "339"]
+  },
+  "sns_lg_gated_gyro": {
+    "owner": "sns_lg_gated_gyro",
+    "threshold": {"ver": "0","type": "flt","data": "0.15"
+    }
+  }
+}
