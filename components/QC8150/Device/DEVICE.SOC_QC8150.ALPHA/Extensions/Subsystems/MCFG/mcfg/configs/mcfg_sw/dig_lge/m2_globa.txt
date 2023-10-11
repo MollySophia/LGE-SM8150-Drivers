@@ -1,0 +1,10 @@
+mcfg_sw/generic_/mh2lm/na/cdma/acg/acg/mcfg_sw.mbn
+mcfg_sw/generic_/mh2lm/na/cdma/sprint/commerci/mcfg_sw.mbn
+mcfg_sw/generic_/mh2lm/na/cdma/uscc/usc/mcfg_sw.mbn
+mcfg_sw/generic_/mh2lm/na/cdma/verizon/hvolte/mcfg_sw.mbn
+mcfg_sw/generic_/mh2lm/na/gsm/att/att/mcfg_sw.mbn
+mcfg_sw/generic_/mh2lm/na/gsm/cca/cca/mcfg_sw.mbn
+mcfg_sw/generic_/mh2lm/na/gsm/att/firstnet/mcfg_sw.mbn
+mcfg_sw/generic_/mh2lm/na/gsm/tmo/tmo/mcfg_sw.mbn
+mcfg_sw/generic_/mh2lm/na/testsim/testsim/mcfg_sw.mbn
+mcfg_sw/generic_/mh2lm/na/row/row_na/mcfg_sw.mbn

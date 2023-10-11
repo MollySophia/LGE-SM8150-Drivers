@@ -1,0 +1,2 @@
+mcfg_sw/generic_/alpha_la/na/cdma/sprint/commerci/mcfg_sw.mbn
+mcfg_sw/generic_/alpha_la/na/cdma/sprint/row_comm/mcfg_sw.mbn

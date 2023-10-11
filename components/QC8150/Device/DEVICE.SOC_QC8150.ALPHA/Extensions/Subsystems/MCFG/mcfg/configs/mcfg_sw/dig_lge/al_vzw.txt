@@ -1,0 +1,3 @@
+mcfg_sw/generic_/alpha_la/na/cdma/verizon/hvolte/mcfg_sw.mbn
+mcfg_sw/generic_/alpha_la/na/cdma/verizon/row_hvol/mcfg_sw.mbn
+mcfg_sw/generic_/alpha_la/na/cdma/visible/hvolte/mcfg_sw.mbn
