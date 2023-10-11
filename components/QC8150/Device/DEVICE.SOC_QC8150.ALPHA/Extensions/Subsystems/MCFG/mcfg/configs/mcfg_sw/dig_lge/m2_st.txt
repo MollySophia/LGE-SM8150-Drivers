@@ -1,0 +1,2 @@
+mcfg_sw/generic_/mh2lm/na/testsim/testsim/mcfg_sw.mbn
+mcfg_sw/generic_/mh2lm/na/cdma/sprint/row_comm/mcfg_sw.mbn

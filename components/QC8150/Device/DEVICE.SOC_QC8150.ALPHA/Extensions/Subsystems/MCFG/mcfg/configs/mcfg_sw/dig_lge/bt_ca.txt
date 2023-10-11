@@ -1,0 +1,7 @@
+mcfg_sw/generic_/beta/na/gsm/canada/bell/bell/mcfg_sw.mbn
+mcfg_sw/generic_/beta/na/gsm/canada/telus/telus/mcfg_sw.mbn
+mcfg_sw/generic_/beta/na/gsm/canada/rgs/rgs/mcfg_sw.mbn
+mcfg_sw/generic_/beta/na/gsm/canada/est/est/mcfg_sw.mbn
+mcfg_sw/generic_/beta/na/gsm/canada/vtr/vtr/mcfg_sw.mbn
+mcfg_sw/generic_/beta/na/gsm/canada/wind/wind/mcfg_sw.mbn
+mcfg_sw/generic_/beta/na/gsm/canada/row_open/row_open/mcfg_sw.mbn

@@ -1,0 +1,4 @@
+mcfg_sw/generic_/mh2lm/korea/row/commerci/mcfg_sw.mbn
+mcfg_sw/generic_/mh2lm/korea/lgu/commerci/mcfg_sw.mbn
+mcfg_sw/generic_/mh2lm/korea/skt/commerci/mcfg_sw.mbn
+mcfg_sw/generic_/mh2lm/korea/kt/commerci/mcfg_sw.mbn

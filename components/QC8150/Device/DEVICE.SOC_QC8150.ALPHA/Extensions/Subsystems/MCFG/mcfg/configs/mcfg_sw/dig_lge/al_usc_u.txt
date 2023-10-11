@@ -1,0 +1,2 @@
+mcfg_sw/generic_/alpha_la/na/cdma/uscc/usc/mcfg_sw.mbn
+mcfg_sw/generic_/alpha_la/na/cdma/uscc/row_usc/mcfg_sw.mbn

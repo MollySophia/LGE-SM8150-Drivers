@@ -1,0 +1,3 @@
+mcfg_sw/generic_/mh2lm_sb/apac/sbm/sbm/mcfg_sw.mbn
+mcfg_sw/generic_/mh2lm_sb/apac/row/sbm_row/mcfg_sw.mbn
+mcfg_sw/generic_/mh2lm_sb/apac/test/sbm_test/mcfg_sw.mbn

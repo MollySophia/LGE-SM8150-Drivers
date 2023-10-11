@@ -1,0 +1,4 @@
+mcfg_sw/generic_/beta/korea/row/commerci/mcfg_sw.mbn
+mcfg_sw/generic_/beta/korea/lgu/commerci/mcfg_sw.mbn
+mcfg_sw/generic_/beta/korea/skt/commerci/mcfg_sw.mbn
+mcfg_sw/generic_/beta/korea/kt/commerci/mcfg_sw.mbn
